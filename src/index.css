@@ -1,0 +1,19 @@
+.dropdown-menu-platform {
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.box-games {
+  height: 730px;
+  overflow-y: scroll;
+}
+
+.box-genres {
+  height: 730px;
+  overflow-y: scroll;
+}
+
+.sticky-Nav {
+  position: sticky;
+  top: 0;
+}
