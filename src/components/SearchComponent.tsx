@@ -14,7 +14,7 @@ function SearchComponent() {
 
   return (
     <>
-      <Container className="my-2 ">
+      <Container className="my-2 px-0 ">
         <Row className="justify-content-end">
           <Col sm={6}>
             <Form

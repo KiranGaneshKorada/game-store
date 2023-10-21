@@ -28,7 +28,7 @@ function GamesGrid() {
 
       <div className="row mx-2 my-2  ">
         {games?.results.map((game) => (
-          <div className="col-sm-3 my-2  " key={game.id}>
+          <div className=" col-sm-6 col-md-6 col-lg-4 col-xl-3 my-2" key={game.id}>
             <GameCard key={game.id} game={game} />
           </div>
         ))}

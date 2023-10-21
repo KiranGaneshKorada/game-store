@@ -27,8 +27,8 @@ function GenreGrid() {
           }
           key={genre.id}
         >
-          <div className="d-flex flex-row container-fluid  bg-opacity-50 ">
-            <div className="px-0 py-0 ">
+          <div className="d-flex flex-row container-fluid px-0  bg-opacity-50 ">
+            <div className=" px-0 py-0 d-none d-md-block ">
               <img
                 height={50}
                 width={90}
