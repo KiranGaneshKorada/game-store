@@ -16,8 +16,8 @@ function Mainbar() {
         className="bg-secondary col bg-opacity-25
       my-0 mx-0 py-0 px-0 pt-4 box-games "
       >
-        <div className="d-flex flex-row">
-          <div className="my-3 mx-2 ms-3">
+        <div className="d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-column ms-2">
+          <div className="my-3 mx-2 ">
             <PlatformDropDown />
           </div>
           <div className="my-3 mx-2">

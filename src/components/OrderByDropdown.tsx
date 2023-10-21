@@ -23,7 +23,7 @@ function OrderByDropdown() {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          order by: {orderBylabel}
+          Order by : {orderBylabel}
         </button>
 
         <ul className="dropdown-menu">
