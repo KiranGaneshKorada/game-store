@@ -24,8 +24,8 @@ function GamesVideo({ slug }: Props) {
     );
 
   return (
-    <div className="">
-      <div className="d-flex justify-content-center container-fluid">
+    <>
+      <div className="col container-fluid mx-0 my-0 px-0 py-0">
         <GameTrailer slug={slug} />
       </div>
       <div className="col container-fluid mx-0 my-0 px-0 py-0 mt-2">
@@ -40,7 +40,7 @@ function GamesVideo({ slug }: Props) {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 }
 
