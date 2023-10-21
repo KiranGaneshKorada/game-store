@@ -39,17 +39,15 @@ function GameTrailer({slug}:Props){
        );
 
     return (
-      <>
+      <div className="d-flex justify-content-center container mx-0">
         <video
-          width="500"
-          height="250"
           poster={imageResize(gameTrailer?.results[0].preview!)}
           controls
         >
           <source src={gameTrailer?.results[0].data[480]} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </>
+      </div>
     );
 
 }

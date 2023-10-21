@@ -8,9 +8,6 @@ function GameDetails() {
   const params = useParams();
   const { game, error, isLoading } = useGameDeatails(params.slug!);
 
-
-
-
   if (error) {
     throw new Error("Data not found");
   }
@@ -27,7 +24,7 @@ function GameDetails() {
 
   return (
     <>
-      <div className="container text-center my-0 px-2 pt-4 py-2 bg-secondary bg-opacity-25 box-col-1">
+      <div className="container-fluid text-center my-0 px-2 pt-4 py-2 bg-secondary bg-opacity-25 box-col-1">
         <div className="d-flex justify-content-start">
           <Link
             className="btn btn-secondary ms-3 mb-2 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
@@ -37,32 +34,31 @@ function GameDetails() {
           </Link>
         </div>
 
-        <div className="row mx-0 my-2">
-          <div className="col">
-            <div className="card mb-3">
-              <div className="row g-0">
-                <div className="col">
+        <div className="container-fluid d-flex flex-column flex-xl-row mx-0 my-2">
+          <div className="">
+            <div className="container-fluid px-0 d-flex justify-content-center card mb-3">
+              <div className="d-flex flex-column flex-lg-row g-0">
+                <div className="">
                   <img
-                    height={220}
                     src={imageResize(game?.background_image!)}
                     className="img-fluid rounded-start"
                     alt="..."
                   />
                 </div>
-                <div className="col">
-                  <div className="card-body pt-4">
-                    <h4 className="card-title">{game?.name}</h4>
-                    <p className="card-text">Rating : {game?.rating}</p>
-                    <p className="card-text">
-                      Publishers : {game?.publishers[0].name}
-                    </p>
-                    <p className="card-text">
-                      <small className="text-body-secondary">
-                        Released:{game?.released}
-                      </small>
-                    </p>
+                  <div className="d-flex justify-content-center align-items-center card-body pt-4">
+                    <div className="container-fluid mx-0 my-0 px-0 py-0">
+                      <h4 className="card-title">{game?.name}</h4>
+                      <p className="card-text">Rating : {game?.rating}</p>
+                      <p className="card-text">
+                        Publishers : {game?.publishers[0].name}
+                      </p>
+                      <p className="card-text">
+                        <small className="text-body-secondary">
+                          Released:{game?.released}
+                        </small>
+                      </p>
+                    </div>
                   </div>
-                </div>
               </div>
             </div>{" "}
             <h1></h1> <h4></h4>
@@ -103,7 +99,7 @@ function GameDetails() {
               </a>
             </h5>
           </div>
-          <div className="col">
+          <div className="">
             <GamesVideo slug={params.slug!} />
           </div>
         </div>
