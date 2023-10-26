@@ -28,7 +28,7 @@ function GameDetails() {
         <div className="d-flex justify-content-start">
           <Link
             className="btn btn-secondary ms-3 mb-2 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-            to="/games"
+            to="/"
           >
             Back
           </Link>

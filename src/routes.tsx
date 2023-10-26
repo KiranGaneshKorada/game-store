@@ -3,12 +3,11 @@ import App from "./App";
 import MainComponent from "./components/MainComponent";
 import GameDetails from "./components/GameDetails";
 import ErrorPage from "./components/ErrorPageComponent";
-import RedirectingComponent from "./components/RedirectingBaseUrl";
+
 
 const router = createBrowserRouter([
-  { path: "", element: <RedirectingComponent /> },
   {
-    path: "/games",
+    path: "",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
